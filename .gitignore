@@ -91,4 +91,4 @@ bin/
 include/
 lib/
 pyvenv.cfg
-Script/
+Scripts/
