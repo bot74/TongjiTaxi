@@ -36,12 +36,12 @@
             <div class="sidebar-header h1">
                 <a class="navbar-brand" href="{% url 'home' %}">
                   <img src="{% static 'img/taxi.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
-                  TaxiPourVous
+                  小小打车
               </a>
           </div>
 
           <ul class="list-unstyled components">
-            <p><span class="font-weight-light">Bienvenu,</span><br><strong class="font-weight-bold">{{ user.username }}</strong></p>
+            <p><span class="font-weight-light">您好,</span><br><strong class="font-weight-bold">{{ user.username }}</strong></p>
 
 
     <!-- this is for the image if you want to add it 
@@ -97,7 +97,7 @@
 
 <ul class="list-unstyled CTAs">
     <li>
-        <a href="{% url 'logout' %}" class="download">Deconecter</a>
+        <a href="{% url 'logout' %}" class="download">退出登陆</a>
     </li>
 
 </ul>

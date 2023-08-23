@@ -9,20 +9,20 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><b>{{userc}}</b> a demander votre service.<br></h5>
+        <h5 class="modal-title" id="exampleModalLabel"><b>{{userc}}</b> 发起了一份出行订单.<br></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
 
-            Depart  : <b>{{depart}}</b><br>
-            Destination : <b>{{dest}}</b><br>
-            Nombre de places : <b>{{nbPlaces}}</b><br>
+            上车点  : <b>{{depart}}</b><br>
+            目的地 : <b>{{dest}}</b><br>
+            人数 : <b>{{nbPlaces}}</b><br>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Rejeter</button>
-        <button type="button" class="btn btn-primary" id="demande_accepter">Accepter</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">拒绝</button>
+        <button type="button" class="btn btn-primary" id="demande_accepter">接单</button>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
 
   <div class="dropdown-menu">
     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">
-        <b>{{userc}}</b> a demander votre service.<br>
+        <b>{{userc}}</b> 发起了一份出行订单.<br>
     </a>
 
   </div>

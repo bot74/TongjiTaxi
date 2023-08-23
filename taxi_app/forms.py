@@ -59,8 +59,8 @@ class ChauffeurSignUpForm(UserCreationForm):
         return user
 
 class passagerUpdateForm(forms.ModelForm):
-    username = forms.CharField(label="Nom d'utilisateur")
-    email = forms.CharField(label="Email")
+    username = forms.CharField(label="用户名")
+    email = forms.CharField(label="邮箱")
 
     class Meta(UserCreationForm.Meta):
         model = CustomUser
@@ -70,8 +70,8 @@ class passagerUpdateForm(forms.ModelForm):
         # }
 
 class chauffeurUpdateForm(forms.ModelForm):
-    username = forms.CharField(label="Nom d'utilisateur")
-    email = forms.CharField(label="Email")
+    username = forms.CharField(label="用户名")
+    email = forms.CharField(label="邮箱")
     date_naissance = forms.DateInput()
 
     class Meta(UserCreationForm.Meta):
@@ -82,8 +82,8 @@ class chauffeurUpdateForm(forms.ModelForm):
         # }
 
 class chauffeurINFO_UpdateForm(forms.ModelForm):
-    PermisConduire = forms.CharField(max_length=30,label="Permis de conduire")
-    PermisConfiance = forms.CharField(max_length=30,label="Permis de confiance")
+    PermisConduire = forms.CharField(max_length=30,label="驾驶证编号")
+    PermisConfiance = forms.CharField(max_length=30,label="驾驶证编号")
     CIN = forms.CharField(max_length=30)
     aPropos = forms.TextInput()
 
@@ -93,4 +93,4 @@ class chauffeurINFO_UpdateForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(chauffeurINFO_UpdateForm, self).__init__(*args, **kwargs)
-        self.fields['aPropos'].label = "A propos de vous"
+        self.fields['aPropos'].label = "个人简介"

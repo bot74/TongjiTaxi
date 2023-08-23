@@ -10,13 +10,13 @@
   {% include 'messages.html' %}
 </div>
 <div class="text-center">
-  <button id="demander_maintenant" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Demander maintenant!</button>
+  <button id="demander_maintenant" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">上车！</button>
 </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header" style="background-color: #4abf3d;">
-        <h5 class="modal-title text-center font-weight-bold" id="exampleModalLabel">Saisir les coordonnées du voyage</h5>
+        <h5 class="modal-title text-center font-weight-bold" id="exampleModalLabel">输入行程详情</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -24,26 +24,26 @@
       <div class="modal-body">
         <form id="form_demande">
           <div class="form-group">
-            <label for="destination" class="col-form-label">Depart:</label>
+            <label for="destination" class="col-form-label">上车点:</label>
             <input type="text" class="form-control" id="depart">
           </div>
           <div class="form-group">
-            <label for="destination" class="col-form-label">Destination:</label>
+            <label for="destination" class="col-form-label">目的地:</label>
             <input type="text" class="form-control" id="destination">
           </div>
           <div class="form-group">
-            <label for="nombreDePlaces" class="col-form-label">Nombre de places:</label>
+            <label for="nombreDePlaces" class="col-form-label">人数:</label>
             <input type="text" class="form-control" id="nombreDePlaces">
           </div>
         </form>
         <div id="ajax-errors" class="alert alert-danger" role="alert" style="display: none;">
-          <strong>Whoops!</strong><br>
-          <span>Quelque chose ne marche pas ! s'il vous plait vérifier vos données </span>
+          <strong>啊噢!</strong><br>
+          <span>出错了，请检查您的输入数据 </span>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-primary btn-lg" id="demande_button"><span id="Commander_button">Commander un Taxi </span><i id="Commander_icon" class="fas fa-taxi"></i></button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary btn-lg" id="demande_button"><span id="Commander_button">呼叫司机 </span><i id="Commander_icon" class="fas fa-taxi"></i></button>
       </div>
     </div>
   </div>
