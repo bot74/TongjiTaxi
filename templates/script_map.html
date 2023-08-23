@@ -4,12 +4,12 @@
   var x = document.getElementById("LatLng");
 
   function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 31.932940, lng: -4.423060},
-      zoom: 15
-    });
+    var map = new BMapGL.Map(document.getElementById('map'));
 
-    var infoWindow = new google.maps.InfoWindow();
+    map.centerAndZoom(new BMapGL.Point(116.404, 39.915), 15);
+    map.enableScrollWheelZoom();
+
+    var infoWindow = new BMapGL.InfoWindow();
 
     if (navigator.geolocation) {
       $( document ).ready(function() {
@@ -30,19 +30,19 @@
 
 var icon2 = {
     url: "{% static 'img/marker_chauff.png' %}", // url
-    scaledSize: new google.maps.Size(40, 61), // scaled size
-    //origin: new google.maps.Point(0,0), // origin
-    //anchor: new google.maps.Point(0, 0) // anchor
+    scaledSize: new BMapGL.Size(40, 61), // scaled size
+    //origin: new BMapGL.Point(0,0), // origin
+    //anchor: new BMapGL.Point(0, 0) // anchor
 };
 var icon = {
     url: "{% static 'img/marker_passa.png' %}", // url
-    scaledSize: new google.maps.Size(40, 63), // scaled size
-    //origin: new google.maps.Point(0,0), // origin
-    //anchor: new google.maps.Point(0, 0) // anchor
+    scaledSize: new BMapGL.Size(40, 63), // scaled size
+    //origin: new BMapGL.Point(0,0), // origin
+    //anchor: new BMapGL.Point(0, 0) // anchor
 };
-          var marker  = new google.maps.Marker({position: pos  , map: map , icon : icon});
+          var marker  = new BMapGL.Marker({position: pos  , map: map , icon : icon});
           if ('{{lat}}' != 'vide') {
-          var marker2 = new google.maps.Marker({position: pos2 , map: map , icon : icon2});
+          var marker2 = new BMapGL.Marker({position: pos2 , map: map , icon : icon2});
           }
               //infoWindow.setPosition(pos);
               //infoWindow.setContent('Vous êtes ICI !');
@@ -57,7 +57,7 @@ var icon = {
               
               for (var city in citymap) {
                
-                var cityCircle = new google.maps.Circle({
+                var cityCircle = new BMapGL.Circle({
                   strokeColor: '#FF0000',
                   strokeOpacity: 0.8,
                   strokeWeight: 2,
@@ -123,11 +123,5 @@ var icon = {
   }
 </script>
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUlg4bS-zLcteuDDoxIZnQB8E3A0xJq58&callback=initMap">
-
-    //API PRO
-    //AIzaSyCUlg4bS-zLcteuDDoxIZnQB8E3A0xJq58
-    //API GRATUIT
-    //AIzaSyDtm9WofinaRE7bYJDHxUiFiZPZKP3Ofi0
-
-  </script>
+src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=76VyNOWsjs5Sv8yv8hgKkWbsXzRPlC85&callback=initMap">
+</script>
