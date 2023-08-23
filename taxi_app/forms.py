@@ -33,9 +33,9 @@ class ChauffeurSignUpForm(UserCreationForm):
     password1 = forms.CharField(label="密码",widget=forms.PasswordInput)
     password2 = forms.CharField(label="确认密码",widget=forms.PasswordInput)
 
-    PermisConduire = forms.CharField(max_length=30,label="驾照编码")
-    PermisConfiance = forms.CharField(max_length=30,label="确认驾照编码")
-    CIN = forms.CharField(max_length=30)
+    PermisConduire = forms.CharField(max_length=30,label="驾驶证编号")
+    PermisConfiance = forms.CharField(max_length=30,label="发动机号")
+    CIN = forms.CharField(max_length=30,label="车牌号")
     aPropos = forms.TextInput()
     date_naissance = forms.DateInput()
 
@@ -83,8 +83,8 @@ class chauffeurUpdateForm(forms.ModelForm):
 
 class chauffeurINFO_UpdateForm(forms.ModelForm):
     PermisConduire = forms.CharField(max_length=30,label="驾驶证编号")
-    PermisConfiance = forms.CharField(max_length=30,label="驾驶证编号")
-    CIN = forms.CharField(max_length=30)
+    PermisConfiance = forms.CharField(max_length=30,label="发动机号")
+    CIN = forms.CharField(max_length=30,label="车牌号")
     aPropos = forms.TextInput()
 
     class Meta(UserCreationForm.Meta):
