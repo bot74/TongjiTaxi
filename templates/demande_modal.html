@@ -4,7 +4,7 @@
 			    console.log( "ready!" );			
 			    if ('{{statut}}' == 'True'){
 			    	//$("#info").css("visibility", "");
-					//$('#info').html("demande accepter par {{chauffeur}}");
+					//$('#info').html("司机 {{chauffeur}} 已接单");
 					//$('#demander_maintenant').html('Demander encore !');
 				}
 			});
@@ -35,7 +35,7 @@
 				$('#exampleModal').modal('hide')
 				$('#demander_maintenant').hide();
 				$("#info").css("visibility", "");
-				$('#info').html("Votre demande est diffusée à <b>1 TAXI</b>.<br>SVP, Attendez-vous qu'un chauffeur accepte votre demande <br> <i style='height: 35px;width: 35px;' class='fas fa-cog fa-spin'></i>");
+				$('#info').html("您的出行请求已经被广播给 <b>1 司机</b>.<br>请等待司机接单 <br> <i style='height: 35px;width: 35px;' class='fas fa-cog fa-spin'></i>");
 
 
 			},

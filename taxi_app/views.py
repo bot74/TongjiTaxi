@@ -82,7 +82,7 @@ def home_passager(request):
                      'lat'           : p.chauffeur.latitude,
                      'lng'           : p.chauffeur.longitude
                      }
-            messages.success(request, f'DEMANDE ACCEPTER par %s' % p.chauffeur)
+            messages.success(request, f'已由司机 %s 接单' % p.chauffeur)
             return render(request, "home_passager.html", context)
         else:
             context={'chauffeur'     : p.chauffeur,
@@ -125,7 +125,7 @@ def profile_passager(request):
         u_form = passagerUpdateForm(request.POST, instance=request.user)
         if u_form.is_valid():
             u_form.save()
-            messages.success(request,f'Account updated!')
+            messages.success(request,f'账户已更新！')
             return redirect('profile_passager')
     else:
         u_form = passagerUpdateForm(instance=request.user)
@@ -145,7 +145,7 @@ def profile_chauffeur(request):
         if c_form.is_valid() and i_form.is_valid():
             c_form.save()
             i_form.save()
-            messages.success(request, f'Account updated!')
+            messages.success(request, f'账户已更新！')
             return redirect('profile_chauffeur')
     else:
         c_form = chauffeurUpdateForm(instance=request.user)
