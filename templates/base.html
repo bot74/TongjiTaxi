@@ -47,13 +47,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'home' %}">主页 <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#aPropos">A propos</a>
+          <a class="nav-link" href="#aPropos">关于</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'contacter' %}">Contacter nous</a>
+          <a class="nav-link" href="{% url 'contacter' %}">联系我们</a>
         </li>
         <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,16 +77,16 @@
         {% else %}
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            S'inscrire
+            注册
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{% url 'passager_signup' %}"><i class="fas fa-user"></i> &nbsp;<b>Passager</b></a>
+            <a class="dropdown-item" href="{% url 'passager_signup' %}"><i class="fas fa-user"></i> &nbsp;<b>乘客</b></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{% url 'chauffeur_signup' %}"><i class="fas fa-taxi"></i> &nbsp;<b>Chauffeur</b></a>
+            <a class="dropdown-item" href="{% url 'chauffeur_signup' %}"><i class="fas fa-taxi"></i> &nbsp;<b>司机</b></a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'login' %}">Se connecter</a>
+          <a class="nav-link" href="{% url 'login' %}">登陆</a>
         </li>
       {% endif %}
     </ul>

@@ -14,21 +14,21 @@
 				<img src="{% static 'img/1.jpg' %}" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>Tu Demandes</h5>
-					<p>Vous pouvez commander un taxi à l'emplacement où vous situez maintenant ou à un endroit différent de votre emplacement.</p>
+					<p>您可以在您现在所在的位置或附近其他位置打车.</p>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src="{% static 'img/2.jpg' %}" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>Le Taxi Arrive</h5>
-					<p>Après que le chauffeur accepte votre demande, vous pouvez suivre le taxi sur la carte, venir vers vous.</p>
+					<p>司机接受订单后会即刻向您赶来.</p>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src="{% static 'img/3.jpg' %}" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Tu Evalues</h5>
-					<p>N'oubliez pas d'évaluer la course et aussi le chauffeur afin de partager votre expérience et nous aider à améliorer notre service.</p>
+					<h5>评分</h5>
+					<p>别忘了为司机和我们的服务打分，以便帮助改善我们的服务</p>
 				</div>
 			</div>
 		</div>
@@ -53,10 +53,8 @@
 					<div class="features-icons-icon d-flex">
 						<img class="m-auto text-primary" src="{% static 'img/step1.png' %}"></img>
 					</div>
-					<h3>Créé votre compte gratuitement</h3>
-					<p class="lead mb-0">TaxiPourVous simplifie vos déplacements.
-						En créant votre compte utilisateur gratuitement , vous pourrez ajouter les chauffeurs 
-					qui vous ont transporté et que vous avez appréciés à vos favoris.</p>
+					<h3>免费注册</h3>
+					<p class="lead mb-0">小小打车让您的出行更加方便</p>
 				</div>
 			</div>
 			<div class="col-lg-4">
@@ -64,8 +62,8 @@
 					<div class="features-icons-icon d-flex">
 						<img class="m-auto text-primary" src="{% static 'img/step2.png' %}"></img>
 					</div>
-					<h3>Application facile à utiliser</h3>
-					<p class="lead mb-0">TaxiPourVous permet au client de prendre un taxi le plus rapidement possible, et facilite la recherche de taxi selon la distance. Cela permet au client de ne filtrer que les taxis situés à proximité de son emplacement.</p>
+					<h3>用户友好的界面</h3>
+					<p class="lead mb-0">小小打车用友好的界面帮您找到附近可用的网约车，助力您的出行</p>
 				</div>
 			</div>
 			<div class="col-lg-4">
@@ -73,9 +71,8 @@
 					<div class="features-icons-icon d-flex">
 						<img class="m-auto text-primary" src="{% static 'img/step3.png' %}"></img>
 					</div>
-					<h3>Visualiser les taxis approximés</h3>
-					<p class="lead mb-0">TaxiPourVous permet de visualiser les taxis sur la carte avec la distance d'approche à
-						parcourir des différents taxis grâce au GPS de votre mobile.
+					<h3>查看周边司机</h3>
+					<p class="lead mb-0">小小打车借助百度地图帮助您查看正在附近的司机，方便您进行选择
 					</p>
 				</div>
 			</div>
@@ -85,9 +82,9 @@
 
 <section id="aPropos">
 	<div class="container text-center my-5">
-		<h2>Bienvenu à TaxiPourVous! <span class="icon-emo-happy"></span></h2>
+		<h2>欢迎来到小小打车！ <span class="icon-emo-happy"></span></h2>
 		<p class="lead">
-			Si vous avez déjà un compte, allez-y et <a href="{% url 'login' %}">s'identifier</a>. Si vous êtes nouveau sur TaxiPourVous, commencez par créer un <a href="{% url 'chauffeur_signup' %}">compte chauffeur</a> ou un <a href="{% url 'passager_signup' %}">compte passager</a>.
+			如果您还没有登陆，可以在这里 <a href="{% url 'login' %}">登陆</a>. 如果还没有账号，可以注册为 <a href="{% url 'chauffeur_signup' %}">司机</a> 或 <a href="{% url 'passager_signup' %}">乘客</a>.
 		</p>
 		<hr>
 		<h3>A propos du site</h3>
@@ -102,22 +99,22 @@
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a href="#">A propos</a>
+              <a href="#">关于</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="{% url 'contacter' %}">Contacter nous</a>
+              <a href="{% url 'contacter' %}">联系我们</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
+              <a href="#">用户条款</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
+              <a href="#">隐私政策</a>
             </li>
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; TaxiPourVous 2019. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; 小小打车 2023. All Rights Reserved.</p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">

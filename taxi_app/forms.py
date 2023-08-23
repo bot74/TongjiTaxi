@@ -8,9 +8,9 @@ from .models import CustomUser,Chauffeur,Passager
 
 
 class PassagerSignUpForm(UserCreationForm):
-    username = forms.CharField(label="Nom d'utilisateur")
-    password1 = forms.CharField(label="Mot de passe",widget=forms.PasswordInput)
-    password2 = forms.CharField(label="Confirmation du mot de passe",widget=forms.PasswordInput)
+    username = forms.CharField(label="用户名")
+    password1 = forms.CharField(label="密码",widget=forms.PasswordInput)
+    password2 = forms.CharField(label="确认密码",widget=forms.PasswordInput)
 
     class Meta(UserCreationForm.Meta):
         model = CustomUser
@@ -29,12 +29,12 @@ class PassagerSignUpForm(UserCreationForm):
 
 
 class ChauffeurSignUpForm(UserCreationForm):
-    username = forms.CharField(label="Nom d'utilisateur")
-    password1 = forms.CharField(label="Mot de passe",widget=forms.PasswordInput)
-    password2 = forms.CharField(label="Confirmation du mot de passe",widget=forms.PasswordInput)
+    username = forms.CharField(label="用户名")
+    password1 = forms.CharField(label="密码",widget=forms.PasswordInput)
+    password2 = forms.CharField(label="确认密码",widget=forms.PasswordInput)
 
-    PermisConduire = forms.CharField(max_length=30,label="Permis de conduire")
-    PermisConfiance = forms.CharField(max_length=30,label="Permis de confiance")
+    PermisConduire = forms.CharField(max_length=30,label="驾照编码")
+    PermisConfiance = forms.CharField(max_length=30,label="确认驾照编码")
     CIN = forms.CharField(max_length=30)
     aPropos = forms.TextInput()
     date_naissance = forms.DateInput()

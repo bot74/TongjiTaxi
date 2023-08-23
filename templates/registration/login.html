@@ -18,7 +18,7 @@
         </div>
         {% endif %}
 
-        <h2 class="card-title text-center">S'identifier <i class="fas fa-sign-in-alt"></i></h2>
+        <h2 class="card-title text-center">登陆 <i class="fas fa-sign-in-alt"></i></h2>
         <form method="post" novalidate class="form-signin">
           {% csrf_token %}
           <input type="hidden" name="next" value="{{ next }}">
@@ -29,10 +29,10 @@
             {{ form.password|as_crispy_field }}
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-lg btn-primary text-uppercase">Se connecter</button>
+            <button type="submit" class="btn btn-lg btn-primary text-uppercase">建立连接！</button>
           </div>
           <div class="mt-5">
-            <p>Vous n'avez pas de compte? <a href="{% url 'signup' %}">inscrivez-vous maintenant</a></p>
+            <p>还没有账号？ <a href="{% url 'signup' %}">点击这里注册</a></p>
           </div>
 
         </form>

@@ -65,30 +65,30 @@
 
 
     <li>
-        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-bullhorn"></i> Mes demandes</a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-bullhorn"></i> 我的请求 </a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
             <li>
-                <a href="#">Demande 1</a>
+                <a href="#">请求 1</a>
             </li>
             <li>
-                <a href="#">Demande 2</a>
+                <a href="#">请求 2</a>
             </li>
             <li>
-                <a href="#">Demande 3</a>
+                <a href="#">请求 3</a>
             </li>
         </ul>
     </li>
     <li>
-        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-check-square"></i> Mes voyages</a>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-check-square"></i> 我的出行 </a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
             <li>
-                <a href="#">Voyage 1</a>
+                <a href="#">出行 1</a>
             </li>
             <li>
-                <a href="#">Voyage 2</a>
+                <a href="#">出行 2</a>
             </li>
             <li>
-                <a href="#">Voyage 3</a>
+                <a href="#">出行 3</a>
             </li>
         </ul>
     </li>
@@ -129,12 +129,12 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                    {% if user.is_authenticated and user.is_passager %}
-                                   <a class="dropdown-item" href="{% url 'profile_passager' %}"><i class="fas fa-user-circle"></i> &nbsp;<b>Profile</b></a>
+                                   <a class="dropdown-item" href="{% url 'profile_passager' %}"><i class="fas fa-user-circle"></i> &nbsp;<b>个人主页</b></a>
                                    {% else %}
-                                   <a class="dropdown-item" href="{% url 'profile_chauffeur' %}"><i class="fas fa-user-circle"></i> &nbsp;<b>Profile</b></a>
+                                   <a class="dropdown-item" href="{% url 'profile_chauffeur' %}"><i class="fas fa-user-circle"></i> &nbsp;<b>个人主页</b></a>
                                    {% endif %}
                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> &nbsp;<b>Déconnecter</b></a>
+                                    <a class="dropdown-item" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> &nbsp;<b>注销</b></a>
                                </div>
                            </li>
                            <span class="nav-link"> {{ user.username }}
